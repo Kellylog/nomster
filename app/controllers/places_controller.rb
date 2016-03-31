@@ -8,7 +8,7 @@ class PlacesController < ApplicationController
 
   def new
     @place = Place.new
-    @comment = Comment.new
+
   end
 
 
@@ -24,6 +24,7 @@ class PlacesController < ApplicationController
   
   def show
     @place = Place.find(params[:id])
+    @comment = Comment.new
   end
 
 
