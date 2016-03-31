@@ -8,6 +8,7 @@ class PlacesController < ApplicationController
 
   def new
     @place = Place.new
+    @comment = Comment.new
   end
 
 
